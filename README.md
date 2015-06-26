@@ -33,7 +33,7 @@ Grunt will be used to clean and minify the code
 	$ sudo npm install -g grunt-cli
 
 ### Mongodb
-Mongo is used to store the users and persist the sessions. This was tested with version 2.6.5. Visit the link below for installation instructions.
+Mongo is used to store the data, users and to persist the sessions. This was tested with version 2.6.5. Visit the link below for installation instructions.
 
 [http://docs.mongodb.org/manual/administration/install-on-linux/](http://docs.mongodb.org/manual/administration/install-on-linux/)
 
@@ -160,10 +160,10 @@ When called, grunt will automatically run the tests, both backend and frontend. 
 
 ## Example App
 
-The CATS live instance of the database can be found [here](http://www.cats-cons.dk/). Editing records requires login credentials.
+The CATS live instance of the database can be found [here](http://catsdb.smk.dk/). Editing records requires login credentials.
 
 ## Contact
-CATS
+[CATS](http://www.cats-cons.dk/)
 
 ## License
-MIT
+[MIT](/LICENSE)
