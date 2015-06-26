@@ -25,7 +25,7 @@ div#searchContainer
 									label.col-sm-4.control_label Sample creation date
 									div(ng-controller="DatepickerCntrl").col-sm-8
 										div.input-group
-											input(ng-readonly="record.sampleType.id == 'noninvasive'", type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.sampleDate", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+											input(ng-readonly="record.sampleType.id == 'noninvasive'", type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.sampleDate", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 											//input(ng-readonly="record.sampleType.id == 'noninvasive'", type="text", datepicker-popup="{{format}}", ng-model="record.sampleDate", is-open="opened").form-control
 											span.input-group-btn
 												button(type="button", ng-click="open($event)", ng-disabled="record.sampleType.id == 'noninvasive'").btn.btn-default: i.glyphicon.glyphicon-calendar
@@ -183,7 +183,7 @@ div#searchContainer
 											label.col-sm-4.control_label Production date earliest/single
 											div(ng-controller="DatepickerCntrl").col-sm-8
 												div.input-group
-													input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.stretcherProductionDateEarliest", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+													input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.stretcherProductionDateEarliest", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 													span.input-group-btn
 														button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 									div.group.col-sm-6
@@ -191,7 +191,7 @@ div#searchContainer
 											label.col-sm-4.control_label Production date latest
 											div(ng-controller="DatepickerCntrl").col-sm-8
 												div.input-group
-													input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.stretcherProductionDateLatest", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+													input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.stretcherProductionDateLatest", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 													span.input-group-btn
 														button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 
@@ -261,7 +261,7 @@ div#searchContainer
 											label.col-sm-4.control_label Production date
 											div(ng-controller="DatepickerCntrl").col-sm-8
 												div.input-group
-													input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.productionDate", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+													input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.productionDate", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 													span.input-group-btn
 														button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 							div(ng-switch-when="xray")
@@ -388,7 +388,7 @@ div#searchContainer
 												label.col-sm-4.control_label Date
 												div(ng-controller="DatepickerCntrl").col-sm-8
 													div.input-group
-														input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="sampleAnalysis.date", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+														input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="sampleAnalysis.date", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 														span.input-group-btn
 															button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 										div.group.col-sm-6
@@ -571,7 +571,7 @@ div#searchContainer
 									label.col-sm-4.control_label Production date earliest/single
 									div(ng-controller="DatepickerCntrl").col-sm-8
 										div.input-group
-											input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.artwork.productionDateEarliest", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+											input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.artwork.productionDateEarliest", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 											span.input-group-btn
 												button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 								div.form-group 
@@ -583,7 +583,7 @@ div#searchContainer
 									label.col-sm-4.control_label Production date latest
 									div(ng-controller="DatepickerCntrl").col-sm-8
 										div.input-group
-											input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.artwork.productionDateLatest", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+											input(type="text", datepicker-localdate, datepicker-popup="{{format}}", ng-model="record.artwork.productionDateLatest", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 											span.input-group-btn
 												button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 								div.form-group 
@@ -698,12 +698,12 @@ div#searchContainer
 						label(ng-show="filter.sampleType.id == 'pigment'").col-sm-2.col-lg-1 Pigment date
 						div(ng-controller="DatepickerCntrl").col-lg-2.col-sm-4
 							div.input-group
-								input(ng-blur="filterChanged()", type="text", datepicker-localdate, datepicker-popup="{{format}}", placeholder="Earliest date", ng-model="filter.earliestDate", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+								input(ng-blur="filterChanged()", type="text", datepicker-localdate, datepicker-popup="{{format}}", placeholder="Earliest date", ng-model="filter.earliestDate", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 								span.input-group-btn
 									button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 						div(ng-controller="DatepickerCntrl").col-lg-2.col-sm-4
 							div.input-group
-								input(ng-blur="filterChanged()", type="text", datepicker-localdate, datepicker-popup="{{format}}", placeholder="Latest date", ng-model="filter.latestDate", is-open="opened", min-date="minDate", max-date="'2015-06-22'", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
+								input(ng-blur="filterChanged()", type="text", datepicker-localdate, datepicker-popup="{{format}}", placeholder="Latest date", ng-model="filter.latestDate", is-open="opened", min-date="minDate", max-date="maxDate", datepicker-options="dateOptions", date-disabled="disabled(date, mode)", close-text="Close").form-control
 								span.input-group-btn
 									button(type="button", ng-click="open($event)").btn.btn-default: i.glyphicon.glyphicon-calendar
 	div.group.row
